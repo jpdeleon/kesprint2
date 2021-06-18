@@ -1,0 +1,64 @@
+#name,value,fit,bounds,label,unit
+#companion b astrophysical params,,,,,
+b_rr,0.0312,1,trunc_normal 0 1 0.0312 0.0091,$R_b / R_\star$,
+b_rsuma,0.060887407315110234,1,trunc_normal 0 1 0.060887407315110234 0.053000146108888604,$(R_\star + R_b) / a_b$,
+b_cosi,0.0,1,trunc_normal 0 1 0.0 0.3,$\cos{i_b}$,
+b_epoch,2457140.8467,1,trunc_normal -1000000000000.0 1000000000000.0 2457140.8467 0.0021,$T_{0;b}$,$\mathrm{BJD}$
+b_period,9.3275,1,trunc_normal -1000000000000.0 1000000000000.0 9.3275 2e-05,$P_b$,$\mathrm{d}$
+b_f_c,0.0,0,trunc_normal -1 1 0.0 0.0,$\sqrt{e_b} \cos{\omega_b}$,
+b_f_s,0.0,0,trunc_normal -1 1 0.0 0.0,$\sqrt{e_b} \sin{\omega_b}$,
+#companion c astrophysical params,,,,,
+c_rr,0.0175,1,trunc_normal 0 1 0.0175 0.00142,$R_c / R_\star$,
+c_rsuma,0.13415387326499228,1,trunc_normal 0 1 0.13415387326499228 0.036045533634610855,$(R_\star + R_c) / a_c$,
+c_cosi,0.0,1,trunc_normal 0 1 0.0 0.3,$\cos{i_c}$,
+c_epoch,2457143.6543,1,trunc_normal -1000000000000.0 1000000000000.0 2457143.6543 0.00252,$T_{0;c}$,$\mathrm{BJD}$
+c_period,2.1517,1,trunc_normal -1000000000000.0 1000000000000.0 2.1517 1e-05,$P_c$,$\mathrm{d}$
+c_f_c,0.0,0,trunc_normal -1 1 0.0 0.0,$\sqrt{e_c} \cos{\omega_c}$,
+c_f_s,0.0,0,trunc_normal -1 1 0.0 0.0,$\sqrt{e_c} \sin{\omega_c}$,
+#companion d astrophysical params,,,,,
+d_rr,0.0259,1,trunc_normal 0 1 0.0259 0.00169,$R_d / R_\star$,
+d_rsuma,0.025337728233235747,1,trunc_normal 0 1 0.025337728233235747 0.005309584744814008,$(R_\star + R_d) / a_d$,
+d_cosi,0.0,1,trunc_normal 0 1 0.0 0.3,$\cos{i_d}$,
+d_epoch,2457142.1917,1,trunc_normal -1000000000000.0 1000000000000.0 2457142.1917 0.00396,$T_{0;d}$,$\mathrm{BJD}$
+d_period,26.2706,1,trunc_normal -1000000000000.0 1000000000000.0 26.2706 0.00011,$P_d$,$\mathrm{d}$
+d_f_c,0.0,0,trunc_normal -1 1 0.0 0.0,$\sqrt{e_d} \cos{\omega_d}$,
+d_f_s,0.0,0,trunc_normal -1 1 0.0 0.0,$\sqrt{e_d} \sin{\omega_d}$,
+#companion e astrophysical params,,,,,
+e_rr,0.0173,1,trunc_normal 0 1 0.0173 0.00156,$R_e / R_\star$,
+e_rsuma,0.08344461507459408,1,trunc_normal 0 1 0.08344461507459408 0.024473688426330853,$(R_\star + R_e) / a_e$,
+e_cosi,0.0,1,trunc_normal 0 1 0.0 0.3,$\cos{i_e}$,
+e_epoch,2457143.9747,1,trunc_normal -1000000000000.0 1000000000000.0 2457143.9747 0.0033,$T_{0;e}$,$\mathrm{BJD}$
+e_period,4.5286,1,trunc_normal -1000000000000.0 1000000000000.0 4.5286 2e-05,$P_e$,$\mathrm{d}$
+e_f_c,0.0,0,trunc_normal -1 1 0.0 0.0,$\sqrt{e_e} \cos{\omega_e}$,
+e_f_s,0.0,0,trunc_normal -1 1 0.0 0.0,$\sqrt{e_e} \sin{\omega_e}$,
+#companion f astrophysical params,,,,,
+f_rr,0.0155,1,trunc_normal 0 1 0.0155 0.00126,$R_f / R_\star$,
+f_rsuma,0.061215157349425134,1,trunc_normal 0 1 0.061215157349425134 0.0173663330220426,$(R_\star + R_f) / a_f$,
+f_cosi,0.0,1,trunc_normal 0 1 0.0 0.3,$\cos{i_f}$,
+f_epoch,2457142.344,1,trunc_normal -1000000000000.0 1000000000000.0 2457142.344 0.00485,$T_{0;f}$,$\mathrm{BJD}$
+f_period,6.1312,1,trunc_normal -1000000000000.0 1000000000000.0 6.1312 3e-05,$P_f$,$\mathrm{d}$
+f_f_c,0.0,0,trunc_normal -1 1 0.0 0.0,$\sqrt{e_f} \cos{\omega_f}$,
+f_f_s,0.0,0,trunc_normal -1 1 0.0 0.0,$\sqrt{e_f} \sin{\omega_f}$,
+#dilution per instrument,,,,,
+dil_k2,0.0,1,uniform 0.0 1.0,$D_\mathrm{0; k2}$,
+#limb darkening coefficients per instrument,,,,,
+host_ldc_q1_k2,0.5,1,trunc_normal 0 1 0.5 0.5,$q_{1; \mathrm{k2}}$,
+host_ldc_q2_k2,0.003,1,trunc_normal 0 1 0.003 0.28,$q_{2; \mathrm{k2}}$,
+#surface brightness per instrument and companion,,,,,
+b_sbratio_k2,0.0,0,trunc_normal 0 1 0.0 0.0,$J_{b; \mathrm{k2}}$,
+c_sbratio_k2,0.0,0,trunc_normal 0 1 0.0 0.0,$J_{c; \mathrm{k2}}$,
+d_sbratio_k2,0.0,0,trunc_normal 0 1 0.0 0.0,$J_{d; \mathrm{k2}}$,
+e_sbratio_k2,0.0,0,trunc_normal 0 1 0.0 0.0,$J_{e; \mathrm{k2}}$,
+f_sbratio_k2,0.0,0,trunc_normal 0 1 0.0 0.0,$J_{f; \mathrm{k2}}$,
+#albedo per instrument and companion,,,,,
+host_geom_albedo_k2,0.0,0,trunc_normal 0 1 0.0 0.0,$A_{\mathrm{geom}; host; \mathrm{k2}}$,
+b_geom_albedo_k2,0.0,0,trunc_normal 0 1 0.0 0.0,$A_{\mathrm{geom}; b; \mathrm{k2}}$,
+c_geom_albedo_k2,0.0,0,trunc_normal 0 1 0.0 0.0,$A_{\mathrm{geom}; c; \mathrm{k2}}$,
+d_geom_albedo_k2,0.0,0,trunc_normal 0 1 0.0 0.0,$A_{\mathrm{geom}; d; \mathrm{k2}}$,
+e_geom_albedo_k2,0.0,0,trunc_normal 0 1 0.0 0.0,$A_{\mathrm{geom}; e; \mathrm{k2}}$,
+f_geom_albedo_k2,0.0,0,trunc_normal 0 1 0.0 0.0,$A_{\mathrm{geom}; f; \mathrm{k2}}$,
+#gravity darkening per instrument and companion,,,,,
+host_gdc_k2,0.0,0,trunc_normal 0 1 0.0 0.0,$Grav. dark._{f; \mathrm{k2}}$,
+#spots per instrument and companion,,,,,
+#errors per instrument,
+ln_err_flux_k2,-7.0,1,uniform -15.0 0.0,$\ln{\sigma_\mathrm{k2}}$,$\ln{ \mathrm{rel. flux.} }$

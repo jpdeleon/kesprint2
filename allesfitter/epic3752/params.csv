@@ -62,3 +62,6 @@ host_gdc_k2,0.0,0,trunc_normal 0 1 0.0 0.0,$Grav. dark._{f; \mathrm{k2}}$,
 #spots per instrument and companion,,,,,
 #errors per instrument,
 ln_err_flux_k2,-7.0,1,uniform -15.0 0.0,$\ln{\sigma_\mathrm{k2}}$,$\ln{ \mathrm{rel. flux.} }$
+#baseline per instrument,
+baseline_gp_matern32_lnsigma_flux_k2,0.0,1,uniform -15.0 15.0,$\mathrm{gp: \ln{\sigma} (k2)}$,
+baseline_gp_matern32_lnrho_flux_k2,0.0,1,uniform -15.0 15.0,$\mathrm{gp: \ln{\rho} (k2)}$,

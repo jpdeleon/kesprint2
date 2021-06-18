@@ -1,0 +1,27 @@
+#name,value,fit,bounds,label,unit
+#companion b astrophysical params,,,,,
+b_rr,0.0449,1,trunc_normal 0 1 0.0449 0.01424,$R_b / R_\star$,
+b_rsuma,0.04594544002642009,1,trunc_normal 0 1 0.04594544002642009 0.02385927228039203,$(R_\star + R_b) / a_b$,
+b_cosi,0.0,1,trunc_normal 0 1 0.0 0.3,$\cos{i_b}$,
+b_epoch,2457139.1892,1,trunc_normal -1000000000000.0 1000000000000.0 2457139.1892 0.01,$T_{0;b}$,$\mathrm{BJD}$
+b_period,0.6487,1,trunc_normal -1000000000000.0 1000000000000.0 0.6487 0.01,$P_b$,$\mathrm{d}$
+b_f_c,0.0,0,trunc_normal -1 1 0.0 0.0,$\sqrt{e_b} \cos{\omega_b}$,
+b_f_s,0.0,0,trunc_normal -1 1 0.0 0.0,$\sqrt{e_b} \sin{\omega_b}$,
+#dilution per instrument,,,,,
+dil_k2,0.1,1,uniform 0.0 1.0,$D_\mathrm{0; k2}$,
+#limb darkening coefficients per instrument,,,,,
+host_ldc_q1_k2,0.5,1,trunc_normal 0 1 0.5 0.25,$q_{1; \mathrm{k2}}$,
+host_ldc_q2_k2,0.02,1,trunc_normal 0 1 0.02 0.28,$q_{2; \mathrm{k2}}$,
+#surface brightness per instrument and companion,,,,,
+b_sbratio_k2,0.0,0,trunc_normal 0 1 0.0 0.0,$J_{b; \mathrm{k2}}$,
+#albedo per instrument and companion,,,,,
+host_geom_albedo_k2,0.0,0,trunc_normal 0 1 0.0 0.0,$A_{\mathrm{geom}; host; \mathrm{k2}}$,
+b_geom_albedo_k2,0.0,0,trunc_normal 0 1 0.0 0.0,$A_{\mathrm{geom}; b; \mathrm{k2}}$,
+#gravity darkening per instrument and companion,,,,,
+host_gdc_k2,0.0,0,trunc_normal 0 1 0.0 0.0,$Grav. dark._{b; \mathrm{k2}}$,
+#spots per instrument and companion,,,,,
+#errors per instrument,
+ln_err_flux_k2,-7.0,1,uniform -15.0 0.0,$\ln{\sigma_\mathrm{k2}}$,$\ln{ \mathrm{rel. flux.} }$
+#baseline per instrument,
+baseline_gp_matern32_lnsigma_flux_k2,0.0,1,uniform -15.0 15.0,$\mathrm{gp: \ln{\sigma} (k2)}$,
+baseline_gp_matern32_lnrho_flux_k2,0.0,1,uniform -15.0 15.0,$\mathrm{gp: \ln{\rho} (k2)}$,
